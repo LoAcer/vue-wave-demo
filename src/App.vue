@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ul>
+      <li><WaterWave :type="'circle'" /></li>
+      <li style="margin-top: 5px"><WaterWave :type="'star'" /></li>
+      <li style=" margin-top: 22px;margin-left: -10px"><WaterWave :type="'roundRect'" /></li>
+      <li style=" margin-top: 5px;margin-left: -170px"><WaterWave :type="'heart'" /></li>
+    </ul>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WaterWave from './components/WaterWave';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    WaterWave
   }
 }
 </script>
@@ -23,6 +27,22 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  background-color: #2c0d61;
 }
+
+ul {
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  top: 20px;
+  padding: 0 20px;
+}
+
+ul li {
+  float: left;
+  margin-right: 40px;
+}
+
 </style>
