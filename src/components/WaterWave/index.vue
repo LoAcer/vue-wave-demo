@@ -9,7 +9,7 @@
   import Retina from "./retina"
 
   export default {
-    name: "index",
+    name: "WaterWave",
     props:['type'],
     data(){
       return {
