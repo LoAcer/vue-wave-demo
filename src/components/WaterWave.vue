@@ -5,8 +5,8 @@
 </template>
 
 <script>
-  import Wave from "./wave";
-  import Retina from "./retina"
+  import Wave from "../utils/wave";
+  import Retina from "../utils/retina"
 
   export default {
     name: "WaterWave",

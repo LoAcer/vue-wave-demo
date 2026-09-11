@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import WaterWave from './components/WaterWave';
+import WaterWave from './components/WaterWave.vue';
 
 export default {
   name: 'app',
